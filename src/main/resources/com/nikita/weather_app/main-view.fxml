@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="240.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nikita.weather_app.MainController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="45.0" prefWidth="241.0" style="-fx-background-color: #000000;" text="ПОГОДНИК" textFill="#fffafa">
+            <font>
+                <Font name="Consolas Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Town" focusTraversable="false" layoutX="48.0" layoutY="51.0" prefHeight="30.0" prefWidth="150.0" promptText="ВВЕДИТЕ ГОРОД" style="-fx-background-color: #333; -fx-border-color: red; -fx-border-radius: 5; -fx-text-inner-color: #aaaaaa;">
+            <font>
+                <Font name="Consolas Bold" size="14.0" />
+            </font></TextField>
+        <Button fx:id="btn" layoutX="66.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="УЗНАТЬ ПОГОДУ">
+            <font>
+                <Font name="Symbol" size="12.0" />
+            </font></Button>
+        <Text fx:id="temp" fill="WHITE" layoutX="15.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТЕМПЕРАТУРА:" wrappingWidth="215.5078125">
+            <font>
+                <Font name="Consolas Bold" size="19.0" />
+            </font>
+        </Text>
+        <Text fx:id="temp_os" fill="WHITE" layoutX="15.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОЩУЩАЕТСЯ:" wrappingWidth="215.5078125">
+            <font>
+                <Font name="Consolas Bold" size="19.0" />
+            </font>
+        </Text>
+        <Text fx:id="tempmax" fill="WHITE" layoutX="15.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МАКСИМУМ:" wrappingWidth="215.5078125">
+            <font>
+                <Font name="Consolas Bold" size="19.0" />
+            </font>
+        </Text>
+        <Text fx:id="tempmin" fill="WHITE" layoutX="15.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МИНИМУМ:" wrappingWidth="215.5078125">
+            <font>
+                <Font name="Consolas Bold" size="19.0" />
+            </font>
+        </Text>
+        <Text fx:id="pressure" fill="WHITE" layoutX="15.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДАВЛЕНИЕ:" wrappingWidth="226.5078125">
+            <font>
+                <Font name="Consolas Bold" size="19.0" />
+            </font>
+        </Text>
+        <Text fill="#cd4949" layoutX="15.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ИНФОРМАЦИЯ">
+            <font>
+                <Font name="Consolas Bold" size="23.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="59.0" fitWidth="44.0" layoutX="173.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@weather-icon.png" />
+            </image>
+        </ImageView>
+    </children>
+</Pane>
